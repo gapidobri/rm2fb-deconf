@@ -1,5 +1,5 @@
 [package]
-name = "rm2fb-dec"
+name = "rm2fb-deconf"
 version = "0.1.0"
 edition = "2021"
 
