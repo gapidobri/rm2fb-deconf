@@ -47,7 +47,7 @@ fn main() -> Result<()> {
     let mut out_file = File::create(args.output)?;
 
     out_file.write_fmt(format_args!("!{}\n", args.version_number))?;
-    out_file.write_fmt(format_args!("{}\n", args.version_string))?;
+    out_file.write_fmt(format_args!("version str {}\n", args.version_string))?;
     out_file.write_fmt(format_args!("update addr {:#01x}\n", update_addr))?;
     out_file.write_fmt(format_args!("updateType str QRect\n"))?;
     out_file.write_fmt(format_args!("create addr {:#01x}\n", create_addr))?;
